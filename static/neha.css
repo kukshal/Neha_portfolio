@@ -1,0 +1,585 @@
+/* reset CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} 
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+/* styling header section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    position: fixed; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 25px;
+    background: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling HOME Section */
+#home{
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap; /* Allows items to wrap */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Padding around the section */
+}
+
+.text{
+    flex: 1; /* Allow text to grow */
+    max-width: 500px; /* Set max width for text */
+    margin: auto; /* Center text */
+    padding: 20px; /* Padding for text */
+    color: rgb(224, 223, 223);
+}
+.heading2{
+    margin-left: 3%;
+}
+
+.outer{
+    border-bottom: 2px solid rgb(2, 173, 200);
+}
+.heading3{
+    font-size: 4rem;
+    padding: 2%;
+}
+
+#kukshal{
+    font-weight: 10;
+    font-style: italic;
+}
+
+.image{
+    /* flex: 1; Allow image to grow */
+    /* display: flex;
+    justify-content: center; 
+    align-items: center;  */
+    margin-top: 5%;
+    margin-left: 8%;
+    height: 65vh;
+    border-right: 3px solid rgb(145, 141, 141);
+    border-bottom: 3px solid  rgb(145, 141, 141);
+    box-shadow: 0px 0px 20px 0.11px grey;
+    margin-left: 20%;
+}
+
+
+.image img{
+    transition: all 0.1s ease-in-out; /* Animation on hover */
+    border: 2px solid white;
+    height: 60vh; 
+    width: 90%;
+}
+
+.image img:hover{
+    transform: scale(1.1);     /* Scale effect on hover */
+}
+
+
+
+
+
+
+
+
+
+/* styling ABOUT Section */
+#about {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    padding: 20px;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the image and text */
+}
+
+/* Image styles */
+.image2 img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    flex: 1; /* Allow image to grow */
+}
+
+/* Text styles */
+.text2 {
+    flex: 1; /* Allow text to grow */
+    padding: 20px; /* Space around text */
+}
+
+.heading6 {
+    font-size: 3em; /* Responsive heading size */
+}
+
+.para2 {
+    font-size: 1.8em; /* Responsive paragraph size */
+    color: rgb(4, 173, 195);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style project section */
+#project {
+    text-align: center;
+    padding: 20px;
+    background-color:#dddede;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between project items */
+}
+
+.project {
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width */
+    max-width: 400px; /* Maximum width for larger screens */
+    border: 1px solid #ddd; /* Optional: add a border */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.2s; /* Animation for hover effect */
+    background-color: rgb(88, 88, 88);
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.heading8{
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.project_img img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.pro_text, .pro_text2 {
+    padding: 15px;
+    margin: 15px;
+}
+
+.pro_heading1, .pro_heading2 {
+    margin: 10px 0;
+    font-size: 1.5em; /* Larger heading font size */
+}
+
+.pro_para1, .pro_para3 {
+    font-size: 1em;
+    line-height: 1.4; /* Improve readability */
+    background-color: rgb(251, 251, 251);
+}
+
+.pro_para2, .pro_para4 {
+    font-size: 0.9em;
+    color: gray; /* Optional: change text color */
+    background-color: rgb(203, 204, 195);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling resume section */
+#resume {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Headings */
+.heading9{
+    font-size: 2.8rem;
+    margin: 20px;
+    text-align: center;
+}
+.heading10 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Outer Box */
+.outer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #7b7d7e;
+}
+
+/* Inner Boxes */
+.inner-box {
+    flex: 1;
+    min-width: 300px; /* Adjusts minimum width */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #bcbcbc;
+}
+
+/* Education and Experience */
+.edu {
+    margin-bottom: 20px;
+}
+
+
+.edu p {
+    margin: 5px 0 0;
+}
+
+/* Button Styles */
+.resume_btn {
+    text-align: center;
+    margin: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the button */
+}
+
+.resume_btn a {
+    display: inline-block; /* This ensures the link acts like a button */
+    padding: 12px 22px;
+    background-color: #2a2b2c;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.resume_btn a:hover {
+    background-color: grey;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* contact styling */
+#contact{
+    background: url(img1.jpg);
+    background-size: cover;      /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Keep the background fixed */
+    padding: 20px;
+}
+
+.heading11{
+    text-align: center; /* Center the heading */
+    font-size: 2.8rem; /* Heading size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: white;
+}
+
+
+
+.form2{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+    width: 100%; /* Full width */
+}
+
+.inner-form{
+    margin: 5%;
+    flex: 1 1 200px; /* Allow inputs to grow/shrink */
+}
+
+.inner-form input{
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Padding for input fields */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    background: none;
+    outline: none;
+    border-bottom: 2px solid purple;
+}
+.inner-form ::placeholder{
+    color: white;
+}
+
+.msg input{
+    background: none;
+    width: 100%; /* Full width of the container */
+    padding: 50px; /* Padding for message field */
+    border: 3px solid purple; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    color: white;
+}
+.msg ::placeholder{
+    color: white;
+}
+
+.btn3{
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for button */
+    color: white; /* Text color */
+    font-size: 1rem; /* Font size */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    margin: 40px 0px 50px 630px;
+    background: purple;
+    border: 2px solid purple;
+}
+
+.btn3:hover{
+    background-color: white;
+    color: purple;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+
+
+/* styling HOME Section */
+    #home {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+
+    }
+
+    .heading3 {
+        font-size: 3rem; /* Smaller font size on mobile */
+    }
+    
+    .image {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+    
+
+
+
+/* styling ABOUT Section */
+    #about {
+        flex-direction: column; /* Stack items on top of each other */
+        text-align: center; /* Center text */
+    }
+
+    .image2,
+    .text2 {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .heading6 {
+        font-size: 1.5em; /* Smaller heading on small screens */
+    }
+
+    .para2 {
+        font-size: 1.2em; /* Smaller paragraph on small screens */
+    }
+
+
+
+
+    /* styling PROJECT Section */
+    .heading8 {
+        font-size: 1.5em; /* Smaller heading on small screens */
+    }
+    .pro_text, .pro_text2{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .sub-img {
+        flex: 1 1 150px; /* Adjust minimum width on smaller screens */
+    }
+    .sub-img img{
+        width: 350px;
+    }
+
+
+    /* styling About Section */
+    .outer-box {
+        flex-direction: column; /* Stacks the inner boxes */
+    }
+
+
+
+/* styling contact Section */
+    .form2 {
+        flex-direction: column; /* Stack inputs vertically on small screens */
+    }
+
+    .inner-form {
+        width: 100%; /* Full width for inputs */
+        margin: 5px 0; /* Reduced margin for small screens */
+    }
+
+    .msg {
+        margin: 10px 0; /* Reduced margin for message input */
+    }
+
+    .heading11 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+    .btn3{
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .projects-container {
+        flex-direction: column; /* Stack projects vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .pro_text, .pro_text2{
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
